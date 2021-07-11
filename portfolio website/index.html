@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Brock Engineering</title>
+        <!--Font awesome CDN-->
+        <link rel="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+        <!--Scroll reveal CDN-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="stylesheet" href="styles.css">
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Source+Code+Pro:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+        
+        
+    </head>
+    <body>
+
+        <!--Header and navlist-->
+            <header>
+                <!-- <h1 class="section-title section-title-header">#include &ltbrockdev.h&gt</h1> -->
+                <img src="images/title-logo-2.png" alt="logo" class ="image-logo">
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class = "nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="aboutme" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="portfolio" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="work" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <!--Introduction-->
+            <section class="intro" id="home">
+                <h1 class="section-title section-title-intro">
+                    Hi!  I'm<strong>Zach Brock</strong>
+                </h1>
+                <p class="section-subtitle section-subtitle-intro">
+                    Based and Redpilled.
+                </p>
+                <img src ="images/1614620762534.jpg" alt="picture of zach" class="image-intro">
+            </section>
+
+
+            <!--Skills-->
+            <section class="my-skills" id="skills">
+                <h2 class="section-title section-title-skills">Fuck you.</h2>
+                    <div class = "skills">
+                        <div class="skill">
+                            <h3>Some shit</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, 
+                                perspiciatis! Modi totam error a ex aspernatur 
+                                blanditiis earum debitis sed deleniti officiis eos minima 
+                                consectetur aliquam quo eveniet, officia praesentium.</p>
+                        </div>
+                        <div class="skill">
+                            <h3>Some shit</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, 
+                                perspiciatis! Modi totam error a ex aspernatur 
+                                blanditiis earum debitis sed deleniti officiis eos minima 
+                                consectetur aliquam quo eveniet, officia praesentium.</p>
+                        </div>                    
+                        <div class="skill">
+                            <h3>Some shit</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, 
+                                perspiciatis! Modi totam error a ex aspernatur 
+                                blanditiis earum debitis sed deleniti officiis eos minima 
+                                consectetur aliquam quo eveniet, officia praesentium.</p>
+                        </div>
+                    </div>
+
+                    <a href = "#work" class="button">What I do</a>
+            </section>
+
+            <!--About Me-->
+            <section class="aboutme" id="aboutme">
+                <h2 class="section-title section-title-about">Here's what inspires me. &#128064 &#128064</h2>
+                <p class="section-subtitle section-subtitle-about">I like to work hard and play hard.</p>
+                <div class="section-body section-body-about">
+                    <div class="about-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, 
+                            perspiciatis! Modi totam error a ex aspernatur 
+                            blanditiis earum debitis sed deleniti officiis eos minima 
+                            consectetur aliquam quo eveniet, officia praesentium.</p>
+                    </div>
+                    <div class="about-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, 
+                            perspiciatis! Modi totam error a ex aspernatur 
+                            blanditiis earum debitis sed deleniti officiis eos minima 
+                            consectetur aliquam quo eveniet, officia praesentium.</p>
+                    </div>
+                </div>
+
+                <img src="images/hero.jpg" alt="another picture of me" class="image-aboutme">
+            </section>
+
+            <!-- portfolio projects-->
+            <section class="portfolio" id="portfolio">
+                <h2 class = "section-title section-title-portfolio"><strong>Shit I've done</strong></h2>          
+                <div class="portfolio-entries">
+                    <div class = "portfolio-entry">               
+                        <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
+                        <a href = "mandelbrot/output.html" class="p01"><img src="images/mandelbrot.png" alt="mandelbrot fractal" class="image-portfolio"></a>
+                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
+                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
+                            <span class="tooltip tooltip-github">View Code</span>
+                        </a>
+                        
+                    </div>
+                    <div class = "portfolio-entry">               
+                        <h3 class= "section-listing section-listing-portfolio p1">Circle Collision Physics</h3>
+                        <a href = "circlesim/circlesim.html" class = "pimagehitbox"><img src="images/circlesim.png" alt="mandelbrot fractal" class="image-portfolio"></a>
+                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
+                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
+                            <span class="tooltip tooltip-github">View Code</span>
+                        </a>
+                    </div>
+                    <div class = "portfolio-entry">               
+                        <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
+                        <a href = "mandelbrot/output.html"><img src="images/hero.jpg" alt="mandelbrot fractal" class="image-portfolio"></a>
+                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
+                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
+                            <span class="tooltip tooltip-github">View Code</span>
+                        </a>
+                    </div>
+                    <div class = "portfolio-entry">               
+                        <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
+                        <a href = "mandelbrot/output.html"><img src="images/1614620762534.jpg" alt="mandelbrot fractal" class="image-portfolio"></a>
+                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
+                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
+                            <span class="tooltip tooltip-github">View Code</span>
+                        </a>
+                    </div>                                                   
+                    <div class = "portfolio-entry">               
+                        <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
+                        <a href = "mandelbrot/output.html"><img src="images/1614620762534.jpg" alt="mandelbrot fractal" class="image-portfolio"></a>
+                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
+                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
+                            <span class="tooltip tooltip-github">View Code</span>
+                        </a>
+                    </div>  
+                    <div class = "portfolio-entry">               
+                        <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
+                        <a href = "mandelbrot/output.html"><img src="images/1614620762534.jpg" alt="mandelbrot fractal" class="image-portfolio"></a>
+                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
+                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
+                            <span class="tooltip tooltip-github">View Code</span>
+                        </a>
+                    </div>  
+                </div>
+            </section>
+
+            <!--Footer-->
+            <footer class = "footer" id ="footer">
+                <a href="mailto:zbrock.eng@gmail.com" class="social-list-link">zbrock.eng@gmail.com</a>
+                <ul class="social-list">
+                    <li class="social-list-item">
+                        <a class = "social-list-link" href="https://github.com/brock-eng">
+                            <img src="images/github_link2.png" target="_blank" class="image-icon-footer">
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class = "social-list-link" href="https://www.linkedin.com/in/zach-brock-687093210/">
+                            <img src="images/linkedin-link.png" target="_blank" class="image-icon-footer">
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class = "social-list-link" href="mailto:zbrock.eng@gmail.com">
+                            <img src="images/email_link.png" target="_blank" class="image-icon-footer">
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+    </body>
+</html>
