@@ -5,8 +5,30 @@
     box-sizing: border-box;
 }
 
+/* ===========================
 
-/*--- root properties ---*/
+    Contents (Ctrl-f # for quick navigation)
+
+    1.0 Root
+    2.0 General Styles
+        2.1 Button
+        2.2 Images
+        2.3 Tooltips
+        2.4 Typography
+    3.0 Header and Navbar
+    4.0 Intro
+        4.1 Intro Animation
+        4.2 Arrow Icon
+    5.0 Skills
+    6.0 About
+    7.0 Portfolio/Projects
+        7.1 Github tooltip
+    8.0 Footer
+    
+    =========================== */
+
+
+/*--- 1.0 Root properties ---*/
 
 :root{
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -22,7 +44,7 @@
 
     --fs-h1: 3.5rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
+    --fs-h3: 1.5rem;
     --fs-body: 1rem;
 
     --image-size: 325px;
@@ -31,6 +53,11 @@
 
     --boxshadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.35), 
                  0.125em 0.125em 0.35em rgba(0, 0,0,0.25);
+
+    --bg-color: hsl(49 37% 94%);
+
+    --typewriterSpeed: 3s;
+    --typewriterCharacters: 24;
 }
 
 @media (min-width: 800px){
@@ -42,7 +69,7 @@
 }
 
 
-/*--- general styles ---*/
+/*--- 2.0 General styles ---*/
 
 body{
     background: var(--clr-light);
@@ -69,8 +96,14 @@ strong {
     font-weight: bold;
 }
 
+.spacing {
+    opacity: 0;
+}
 
-/*--- Button ---*/
+#particles-js{
+    height: 50vh;
+}
+/*--- 2.1 Button ---*/
 
 .button {
     display: inline-block;
@@ -90,14 +123,14 @@ strong {
     transform: scale(1.1);      
 }
 
-/*--- Images ---*/
+/*--- 2.2 Images ---*/
 
 .image-icon-link{
     width: 50px;
     height: 50px;
 }
 
-/*--- Tooltips ---*/
+/*--- 2.3 Tooltips ---*/
 .tooltip{
     position: relative;
     background-color: var(--clr-light);
@@ -109,7 +142,7 @@ strong {
     visibility: hidden
 }
 
-/*--- Typography ---*/
+/*--- 2.4 Typography ---*/
 
 h1,h2, h3 {
     line-height: 1.1;
@@ -135,6 +168,7 @@ h3{
 }
 
 .section-subtitle {
+    text-align: center;
     margin: 0;
     font-size: var(--fs-h3);    
 }
@@ -144,7 +178,7 @@ nav{
 }
 
 
-/*--- header image ---*/
+/*--- 3.0 Header and Navbar ---*/
 
 @media (min-width: 600px) {
 
@@ -162,6 +196,7 @@ nav{
 }
 
 @media (max-width: 600px){
+
     .image-logo{
     height: auto;
     width: 100%;
@@ -170,78 +205,202 @@ nav{
 }
 
 
-/*--- intro section ---*/
+/*--- 4.0 Intro ---*/
 
 .intro{
+    height: 100vh - 100px;
+    min-height: 600px;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (max-width: 600px) {
-    .image-intro{
-        max-width: 350px;
-    }
-}
 .image-intro{
     box-shadow: var(--boxshadow); 
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .section-title-intro{
-    font-weight: var(--fw-reg);
-}
-
-.section-title-intro strong{
-
-    display: block;
+    margin: auto;
 }
 
 .section-subtitle-intro,
 .section-subtitle-about{
     font-family: var(--ff-secondary);
-    background: var(--clr-accent);
     margin-bottom: 1em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px)
+{
+    .intro,
+    .intro-divider,
+    .section-subtitle-intro,
+    .image-logo{
+        background-color: var(--clr-light);
+        z-index: 1;
+    }
     .intro {
-        display: grid;
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
         text-align: right;
-        grid-template-areas:
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
         padding-bottom: 15em;
     }
+
+    .intro-divider{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     .image-intro{
-        grid-area: img;
         min-width: 250px;
         z-index: 2;
         position: relative;
     }
-
+    
     .section-subtitle-intro{
         align-self: start;
-        grid-column: -1/1;
-        grid-row: 2;
-        text-align: right;
+        text-align: center;
         position: relative;
-        left: -2rem;
         z-index: 1;
-
-        width: calc(100% + 1.5rem);
+        margin-top: 2em;
+        width: calc(100%);
     }
+
+    .particles-js-canvas-el,
+    .intro-particles{
+        position: absolute;
+        display: block;
+        top: 0;
+}
 }
 
 
-/*--- skills section ---*/
+/* 4.1 Intro Animation */
+
+.section-title-intro{
+    font-weight: var(--fw-reg);
+    padding-top: 0.1em;
+    padding-bottom: 0.05em;
+}
+
+.section-title-intro {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+}
+  
+.section-title-intro::before,
+.section-title-intro::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title-intro::before {
+    background: var(--clr-light);
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.section-title-intro::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+        blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+.section-subtitle-intro {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2.2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3.5rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 4.2 Arrow Icon */
+
+.icon {
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 3em;
+    width: 80px;
+    height: 60px;
+    opacity: 0;
+    transform: translateY(-4em);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 3.5s) forwards;
+  }
+  
+.arrow {
+    top: 25px;
+    width: 90%;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(90deg);
+}
+
+.arrow::after, .arrow::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    right: -8px;
+    background-color: #fff;
+}
+
+.arrow::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.arrow::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+
+@keyframes arrow {
+    to {
+        transform: translateY(-1em);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+/*--- 5.0 Skills ---*/
 
 .my-skills {
     background-color: var(--clr-dark);
-    background-image: url(images/tech-background-2.png);
+    background-image: url(images/tech-background.jpg);
     background-size: cover;
 
     color: var(--clr-light);
@@ -289,7 +448,7 @@ nav{
 }
 
 
-/*--- aboutme ---*/
+/*--- 6.0 About ---*/
 .image-aboutme {
     margin-left: auto;
     margin-right: auto;
@@ -338,7 +497,7 @@ nav{
 
 
 
-/*--- Portfolio/Projects ---*/
+/*--- 7.0 Portfolio/Projects ---*/
 
 /* HTML Class Heirarchy */
 /* portfolio / portfolio-entries / portfolio-entry */
@@ -363,7 +522,21 @@ nav{
 }
 
 .section-title-portfolio{
+    color: var(--clr-accent);
+}
+
+.section-subtitle-portfolio{
+    color: var(--clr-accent);
+    font-size: 2em;
+}
+
+.portfolio-divider{
+    padding-bottom: 3em;
+}
+
+.portfolio-text{
     color: var(--clr-light);
+    text-align: center;
 }
 
 .section-title-portfolio:after{
@@ -372,7 +545,7 @@ nav{
     width: 25%;
     height: 2px;
     margin: 0.5em auto 1em;
-    background: var(--clr-accent);
+    background: var(--clr-light);
     opacity: 0.55;
 }
 
@@ -403,7 +576,6 @@ nav{
     z-index: 1;
 }
 
-
 .image-portfolio:focus{
     position: relative;
     z-index: 2;
@@ -432,6 +604,8 @@ nav{
     transform: scale(1.05);
 } 
 
+/* 7.1 Github tooltip */
+
 .tooltip-github{
     position: absolute;
     transition: 
@@ -458,7 +632,7 @@ nav{
     border-color: transparent transparent var(--clr-light) transparent;
   }
 
-  /*--- Footer ---*/ 
+  /*--- 8.0 Footer ---*/ 
 
 .footer{
     background: black;
@@ -476,6 +650,7 @@ nav{
     display: flex;
     justify-content: center;
     list-style: none;
+    margin-left: -1.75em;
 }
 
 .social-list-item{

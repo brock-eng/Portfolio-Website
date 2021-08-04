@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Brock Engineering</title>
+
         <!--Font awesome CDN-->
         <link rel="stylesheet"
         href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -21,58 +22,49 @@
         
         
     </head>
+    
     <body>
-
-        <!--Header and navlist-->
-            <header>
-                <!-- <h1 class="section-title section-title-header">#include &ltbrockdev.h&gt</h1> -->
-                <img src="images/title-logo-2.png" alt="logo" class ="image-logo">
-                <button class="nav-toggle" aria-label="toggle navigation">
-                    <span class="hamburger"></span>
-                </button>
-                <nav class = "nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="home" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="aboutme" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="portfolio" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="work" class="nav__link">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-
+            <!--Header and navlist-->
+            <img src="images/title-logo-2.png" alt="logo" class ="image-logo">
 
             <!--Introduction-->
+            <div id="particles-js">
             <section class="intro" id="home">
-                <h1 class="section-title section-title-intro">
-                    Hi!  I'm<strong>Zach Brock</strong>
-                </h1>
-                <p class="section-subtitle section-subtitle-intro">
-                    Based and Redpilled.
-                </p>
-                <img src ="images/1614620762534.jpg" alt="picture of zach" class="image-intro">
+                    <div class="intro-divider">
+                        <img src ="images/headshot.png" alt="picture of zach" class="image-intro">
+                        <div class="spacing">___</div>
+                        <h1 class="section-title section-title-intro">
+                            <div class = "animated"><strong>Hi, I'm Zach.</strong></div>
+                        </h1>
+                    </div>
+                    <p class="section-subtitle section-subtitle-intro">
+                        <strong>Engineer and Programmer</strong>
+                    </p>
+                    <div class="icon">
+                        <div class="arrow"></div>
+                    </div>
             </section>
-
 
             <!--Skills-->
             <section class="my-skills" id="skills">
-                <h2 class="section-title section-title-skills">Fuck you.</h2>
+                <h2 class="section-title section-title-skills">What I Do</h2>
                     <div class = "skills">
                         <div class="skill">
-                            <h3>Some shit</h3>
+                            <h3>Mechanical Design</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, 
                                 perspiciatis! Modi totam error a ex aspernatur 
                                 blanditiis earum debitis sed deleniti officiis eos minima 
                                 consectetur aliquam quo eveniet, officia praesentium.</p>
                         </div>
                         <div class="skill">
-                            <h3>Some shit</h3>
+                            <h3>Manufacturing</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, 
                                 perspiciatis! Modi totam error a ex aspernatur 
                                 blanditiis earum debitis sed deleniti officiis eos minima 
                                 consectetur aliquam quo eveniet, officia praesentium.</p>
                         </div>                    
                         <div class="skill">
-                            <h3>Some shit</h3>
+                            <h3>Software</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, 
                                 perspiciatis! Modi totam error a ex aspernatur 
                                 blanditiis earum debitis sed deleniti officiis eos minima 
@@ -80,7 +72,7 @@
                         </div>
                     </div>
 
-                    <a href = "#work" class="button">What I do</a>
+                    <a href = "resources/Brock_Resume.pdf" class="button">Resume (.pdf)</a>
             </section>
 
             <!--About Me-->
@@ -107,57 +99,55 @@
 
             <!-- portfolio projects-->
             <section class="portfolio" id="portfolio">
-                <h2 class = "section-title section-title-portfolio"><strong>Shit I've done</strong></h2>          
-                <div class="portfolio-entries">
-                    <div class = "portfolio-entry">               
-                        <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
-                        <a href = "mandelbrot/output.html" class="p01"><img src="images/mandelbrot.png" alt="mandelbrot fractal" class="image-portfolio"></a>
-                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
-                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
-                            <span class="tooltip tooltip-github">View Code</span>
-                        </a>
-                        
+                <h2 class = "section-title section-title-portfolio"><strong>Code Portfolio</strong></Portfolio></strong></h2>    
+                <div class = "portfolio-divider">      
+                    <h3 class = "section-subtitle section-subtitle-portfolio">OpenGL Physics Sims</h3>
+                    <div class="portfolio-text">
+                        <p>Various OpenGL projects done in C++ and hosted online using Emscripten<br><i>Viewable on desktop</i></p>
                     </div>
-                    <div class = "portfolio-entry">               
-                        <h3 class= "section-listing section-listing-portfolio p1">Circle Collision Physics</h3>
-                        <a href = "circlesim/circlesim.html" class = "pimagehitbox"><img src="images/circlesim.png" alt="mandelbrot fractal" class="image-portfolio"></a>
-                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
-                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
-                            <span class="tooltip tooltip-github">View Code</span>
-                        </a>
+                    <div class="portfolio-entries">
+                        <div class = "portfolio-entry">               
+                            <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
+                            <a href = "mandelbrot/output.html" class="p01"><img src="images/mandelbrot.png" alt="mandelbrot fractal" class="image-portfolio"></a>
+                            <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
+                                <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
+                                <span class="tooltip tooltip-github">View Code</span>
+                            </a>
+                            
+                        </div>
+                        <div class = "portfolio-entry">               
+                            <h3 class= "section-listing section-listing-portfolio p1">Circle Collision Physics</h3>
+                            <a href = "circlesim/circlesim.html" class = "pimagehitbox"><img src="images/circlesim.png" alt="mandelbrot fractal" class="image-portfolio"></a>
+                            <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
+                                <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
+                                <span class="tooltip tooltip-github">View Code</span>
+                            </a>
+                        </div>
+                        <div class = "portfolio-entry">               
+                            <h3 class= "section-listing section-listing-portfolio p1">Softbody Simulation</h3>
+                            <a href = "softbody/softbody.html"><img src="images/softbody.png" alt="softbody simulation" class="image-portfolio"></a>
+                            <a href = "https://github.com/brock-eng/Soft-Body-Simulation" target="_blank" class="image-wrapper-portfolio">
+                                <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
+                                <span class="tooltip tooltip-github">View Code</span>
+                            </a>
+                        </div>
+                </div>
+            </div>
+                <div class = "portfolio-divider">
+                    <h3 class = "section-subtitle section-subtitle-portfolio">Additional Projects</h3>
+                    <div class="portfolio-text">
+                        <p>Non-previewable software work on github</p>
                     </div>
-                    <div class = "portfolio-entry">               
-                        <h3 class= "section-listing section-listing-portfolio p1">Softbody Simulation</h3>
-                        <a href = "softbody/softbody.html"><img src="images/softbody.png" alt="mandelbrot fractal" class="image-portfolio"></a>
-                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
-                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
-                            <span class="tooltip tooltip-github">View Code</span>
-                        </a>
+                    <div class="portfolio-entries">
+                        <div class = "portfolio-entry">               
+                            <h3 class= "section-listing section-listing-portfolio p1">2D Game/Graphics Engine</h3>
+                            <a href = "https://github.com/brock-eng/Legit-Game-Engine" class = "pimagehitbox"><img src="images/lge.png" alt="mandelbrot fractal" class="image-portfolio"></a>
+                        </div>
+                        <div class = "portfolio-entry">               
+                            <h3 class= "section-listing section-listing-portfolio p1">ODE Solvers</h3>
+                            <a href = "https://github.com/brock-eng/ODE-Integration-Methods" class="p01"><img src="images/lorenz.png" alt="mandelbrot fractal" class="image-portfolio"></a>
+                        </div>
                     </div>
-                    <div class = "portfolio-entry">               
-                        <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
-                        <a href = "mandelbrot/output.html"><img src="images/1614620762534.jpg" alt="mandelbrot fractal" class="image-portfolio"></a>
-                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
-                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
-                            <span class="tooltip tooltip-github">View Code</span>
-                        </a>
-                    </div>                                                   
-                    <div class = "portfolio-entry">               
-                        <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
-                        <a href = "mandelbrot/output.html"><img src="images/1614620762534.jpg" alt="mandelbrot fractal" class="image-portfolio"></a>
-                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
-                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
-                            <span class="tooltip tooltip-github">View Code</span>
-                        </a>
-                    </div>  
-                    <div class = "portfolio-entry">               
-                        <h3 class= "section-listing section-listing-portfolio p1">Mandelbrot Fractal Viewer</h3>
-                        <a href = "mandelbrot/output.html"><img src="images/1614620762534.jpg" alt="mandelbrot fractal" class="image-portfolio"></a>
-                        <a href = "https://github.com/brock-eng/Mandelbrot-Viewer" target="_blank" class="image-wrapper-portfolio">
-                            <img src="images/github_link.png" alt="github code link"  class="image-icon-link image-portfolio-github">
-                            <span class="tooltip tooltip-github">View Code</span>
-                        </a>
-                    </div>  
                 </div>
             </section>
 
@@ -183,4 +173,9 @@
                 </ul>
             </footer>
     </body>
+
+    <!--Scripts-->
+    <script src="particles/particles.js"></script>
+    <script src="particles/app.js"></script>
+    <script src="main.js"></script>
 </html>
