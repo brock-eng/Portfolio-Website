@@ -1,9 +1,8 @@
 
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
+/* 
+    Main css styles sheet for Zach Brock's 
+    portfolio website.  All code was created in-house.
+*/
 
 /* ===========================
 
@@ -29,6 +28,12 @@
 
 
 /*--- 1.0 Root properties ---*/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
 
 :root{
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -662,7 +667,6 @@ nav{
 }
 
 .social-link{
-    font-size: var(--fs-h3);
     font-size: var(--fw-bold);
 }
 
