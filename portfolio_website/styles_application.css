@@ -1,0 +1,201 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/*--- root properties ---*/
+
+:root{
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Roboto Mono', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: rgb(230, 230, 230);
+    --clr-dark: #181b20;
+    --clr-normal: ##16e0bd;
+    --clr-accent: #0dbff5;
+
+    --fs-h1: 3.5rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+
+    --image-size: 325px;
+    --icon-size: 4em;
+    --small-icon-size: 2em;
+
+    --boxshadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.35), 
+                 0.125em 0.125em 0.35em rgba(0, 0,0,0.25);
+}
+
+@media (min-width: 800px){
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+body{
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Emscripten Formatting */
+#controls{
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 1em;
+}
+/*--- Button ---*/
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.button:hover{
+    transform: scale(1.1);      
+}
+
+/*--- Images ---*/
+
+.image-icon-link{
+    width: 50px;
+    height: 50px;
+}
+
+/*--- Tooltips ---*/
+.tooltip{
+    position: relative;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    font-size: var(--fs-h3);
+    text-align: center;
+    border-radius: 4px;
+    z-index: 1;
+    visibility: hidden
+}
+
+/*--- Typography ---*/
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: .25em;
+    font-size: var(--fs-h1);
+}
+
+.section-subtitle {
+    text-align: center;
+    margin: 0;
+    font-size: var(--fs-h3);    
+}
+
+nav{
+    display: none;
+}
+
+/* Header */
+.image-logo{
+    display: block;
+    margin: auto;
+
+    height: 20%;
+    max-width: 100%;
+    position: center;
+    scale: 70%;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* Return Button */
+
+.home-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-h2);
+}
+
+  /*--- Footer ---*/ 
+
+.footer{
+    background: black;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.emscripten-logo{
+    display: block;
+    scale: 25%;
+    margin: -5em;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: -1.75em;
+}
+
+.social-list-link{
+    display: block;
+}
+
+.social-list-item{
+    padding: 1em;
+}
+
+.image-icon-footer{
+    width: var(--small-icon-size);
+}
+
+.social-link{
+    font-size: var(--fw-bold);
+}
+
+.social-list-link:hover{
+    text-decoration: underline;
+}
+
+.social-list-link:hover,
+.image-icon-footer:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
