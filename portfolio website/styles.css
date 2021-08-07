@@ -435,6 +435,7 @@ h3{
         transform: translateY(0);
     }
 }
+
 /*--- 5.0 Skills ---*/
 
 .my-skills {
@@ -493,6 +494,7 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
+
 @media (min-width: 800px) {
     .skills {
         display: flex;
