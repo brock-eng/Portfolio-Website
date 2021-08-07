@@ -76,7 +76,6 @@
 
 
 /*--- 2.0 General styles ---*/
-
 body{
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -109,6 +108,7 @@ strong {
 #particles-js{
     height: 50vh;
 }
+
 /*--- 2.1 Button ---*/
 
 .button {
@@ -253,6 +253,8 @@ h3{
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-filter: grayscale(80%); 
+    filter: grayscale(80%);
 }
 
 .section-title-intro{
@@ -382,6 +384,7 @@ h3{
     font-size: 1.25rem;
     padding-bottom: 1em;
 }
+
 /* 4.2 Arrow Icon */
 
 .icon {
@@ -436,13 +439,10 @@ h3{
 
 .my-skills {
     background-color: var(--clr-dark);
-    background-image: url(images/tech-background.jpg);
     background-size: cover;
 
     color: var(--clr-light);
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
 .skill h3{
@@ -454,28 +454,35 @@ h3{
     position: relative;
 }
 
-.section-title-skills::after {
+.section-subtitle-skills{
+    font-size: var(--ff-secondary);
+}
+
+.section-subtitle-skills::after {
     content: ' ';
     display: block;
     width: 25%;
-    height: 1px;
+    height: 2px;
     margin: 0.5em auto 1em;
     background: var(--clr-light);
     opacity: 0.4;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .skills {
+    flex-wrap: wrap;
     margin-bottom: 4em;
+}
 
+.skills-lists{
+    text-align: left;
 }
 
 .skill-icon{
     width: var(--icon-size);
     height: var(--icon-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0.2em;
@@ -489,15 +496,14 @@ h3{
 @media (min-width: 800px) {
     .skills {
         display: flex;
-        max-width: 1000px;
+        flex-direction: row;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
+        align-items: center;
     }
 
-    .skill + .skill {
-        margin-left: 2em;
-
-    }
 }
 
 
@@ -505,7 +511,7 @@ h3{
 .image-aboutme {
     margin-left: auto;
     margin-right: auto;
-    box-shadow: var(--boxshadow);
+    
 }
 
 .aboutme {
@@ -536,6 +542,7 @@ h3{
     .section-subtitle-about{
         grid-area: subtitle;
         grid-column: 1 / -1;
+        text-align: right;
         position: relative;
         left: -1em;
         width: calc(100% + 4em);
