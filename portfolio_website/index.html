@@ -18,8 +18,11 @@
 
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Source+Code+Pro:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
-        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Source+Code+Pro:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap cdn -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
         
     </head>
     
@@ -60,8 +63,9 @@
                 <h2 class="section-title section-title-skills">What I Do</h2>
                 <h3 class="section-subtitle section-subtitle-skills">I'm an Engineering 
                 </h3>
-                    <div class = "skills">
-                        <div class="skill">
+                    <div class="skills">
+                        
+                        <!-- <div class="skill">
                             <img src="images/skill_icons/boxes.PNG" class="skill-icon">
                             <h3>Manufacturing Engineering</h3>
                             <p>Improvement and omptimization of manufacturing processes is a passion of mine.  Better yet is helping to make other people's jobs easier and safer.</p>
@@ -101,12 +105,80 @@
                                 <li><strong>General</strong> - Carpentry, Woodworking</li>
                                 <li>Version Control, Github</li>
                             </ul>
-                        </div>
+                        </div> -->
+
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="skill">
+                                    <img src="images/skill_icons/boxes.PNG" class="skill-icon">
+                                    <h3>Manufacturing Engineering</h3>
+                                    <p>Improvement and omptimization of manufacturing processes is a passion of mine.  Better yet is helping to make other people's jobs easier and safer.</p>
+                                    <ul class="skills-lists">
+                                        <li><strong>Tech</strong> - Mastercam, Siemens PLC</li>
+                                        <li><strong>Knowledge</strong> - Lean Six Sigma Manufacturing, </li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="skill">
+                                    <img src="images/skill_icons/gears.PNG" class="skill-icon">
+                                    <h3>Mechanical Design</h3>
+                                    <p>I use modern engineering tools and problem solving skills to bring ideas from concept to reality.</p>
+                                    <ul class="skills-lists">
+                                        <li><strong>CAD</strong> - Solidworks, AutoCAD, Fusion 360</li>
+                                        <li><strong>Simulation</strong> - 
+                                            SW Simulation, Star-CCM+</li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="skill">
+                                    <img src="images/skill_icons/html.PNG" class="skill-icon">
+                                    <h3>Software Development</h3>
+                                    <p>I'm a lover of all things code.  Proficient in a variety of languages across desktop, mobile, and web platforms.   
+                                    </p>
+                                    <ul class="skills-lists">
+                                        <li><strong>Backend</strong> - C++, Java, C#, Python</li>
+                                        <li><strong>Web</strong> - Html, CSS, Javascript, JQuery, django</li>
+                                        <li>Version Control, Github</li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="skill">
+                                    <img src="images/skill_icons/hammer_wrench.png" class="skill-icon">
+                                    <h3>Shop Work</h3>
+                                    <p>Engineer with real world carpentry and shop experience.
+                                    </p>
+                                    <ul class="skills-lists">
+                                        <li><strong>Shop</strong> - Welding, Band Saws, Presses, Grinders, Shears</li>
+                                        <li><strong>General</strong> - Carpentry, Woodworking</li>
+                                        <li>Version Control, Github</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+
                     </div>
+                    
                     <h3 class="skills-resume-message">For a more in-depth look at my skills and work history, follow my resume link &#8595;</h3>
 
                     <a href = "resources/Brock_Resume.pdf" class="button">Resume (.pdf)</a>
             </section>
+
+
+           
+
 
             <!--About Me-->
             <section class="aboutme" id="aboutme">
@@ -212,6 +284,8 @@
     </body>
 
     <!--Scripts-->
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="particles/particles.js"></script>
     <script src="particles/app.js"></script>
