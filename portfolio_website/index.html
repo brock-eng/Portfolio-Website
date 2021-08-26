@@ -15,6 +15,7 @@
         <!--Scroll reveal CDN-->
         <script src="https://unpkg.com/scrollreveal"></script>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="carousel.css">
 
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,70 +38,92 @@
             </nav>
             <!--Introduction-->
             <div id="particles-js">
-            <section class="intro" id="home">
-                    <div class="intro-divider">
-                        <img src ="images/headshot.png" alt="picture of zach" class="image-intro">
-                        <div class="spacing">___</div>
-                        <h1 class="section-title section-title-intro">
-                            <div class = "animated"><strong>Hi, I'm Zach,</strong></div>
-                        </h1>
-                    </div>
-                    <p class="section-subtitle section-subtitle-intro">
-                        <strong>Welcome to my Web Portfolio.</strong>
-                    </p>
-                    <div class="icon">
-                        <div class="arrow"></div>
-                    </div>
-            </section>
+                <section class="intro" id="home">
+                        <div class="intro-divider">
+                            <img src ="images/headshot.png" alt="picture of zach" class="image-intro">
+                            <div class="spacing">___</div>
+                            <h1 class="section-title section-title-intro">
+                                <div class = "animated"><strong>Hi, I'm Zach</strong></div>
+                            </h1>
+                        </div>
+                        <p class="section-subtitle section-subtitle-intro">
+                            <strong>Welcome to my Web Portfolio.</strong>
+                        </p>
+                        <div class="icon">
+                            <div class="arrow"></div>
+                        </div>
+                </section>
+            </div>
 
             <!--Skills-->
             <section class="my-skills" id="skills">
                 <h2 class="section-title section-title-skills">What I Do</h2>
-                <h3 class="section-subtitle section-subtitle-skills">I'm a 
-                </h3>
-                    <div class = "skills">
-                        <div class="skill">
-                            <img src="images/skill_icons/boxes.PNG" class="skill-icon">
-                            <h3>Manufacturing Engineering</h3>
-                            <p>Improvement and omptimization of manufacturing processes is a passion of mine.  Better yet is helping to make other people's jobs easier and safer.</p>
-                            <ul class="skills-lists">
-                                <li><strong>Tech</strong> - Mastercam, Siemens PLC</li>
-                                <li><strong>Knowledge</strong> - Lean Six Sigma Manufacturing, </li>
-                            </ul>
-                        </div>                    
-                        <div class="skill">
-                            <img src="images/skill_icons/gears.PNG" class="skill-icon">
-                            <h3>Mechanical Design</h3>
-                            <p>I use modern engineering tools and problem solving skills to bring ideas from concept to reality.</p>
-                            <ul class="skills-lists">
-                                <li><strong>CAD</strong> - Solidworks, AutoCAD, Fusion 360</li>
-                                <li><strong>Simulation</strong> - 
-                                    SW Simulation, Star-CCM+</li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <img src="images/skill_icons/html.PNG" class="skill-icon">
-                            <h3>Software Development</h3>
-                            <p>I'm a lover of all things code.  Proficient in a variety of languages across desktop, mobile, and web platforms.   
-                            </p>
-                            <ul class="skills-lists">
-                                <li><strong>Backend</strong> - C++, Java, C#, Python</li>
-                                <li><strong>Web</strong> - Html, CSS, Javascript, JQuery, django</li>
-                                <li>Version Control, Github</li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <img src="images/skill_icons/hammer_wrench.png" class="skill-icon">
-                            <h3>Shop Work</h3>
-                            <p>Engineer with real world carpentry and shop experience.
-                            </p>
-                            <ul class="skills-lists">
-                                <li><strong>Shop</strong> - Welding, Band Saws, Presses, Grinders, Shears</li>
-                                <li><strong>General</strong> - Carpentry, Woodworking</li>
-                                <li>Version Control, Github</li>
-                            </ul>
-                        </div>
-                    </div>
+                <h3 class="section-subtitle section-subtitle-skills"></h3>
+                    <div class = "skills carousel">
+                        <button class="carousel_button carousel_button--left">
+                            <img src="images/utility/left_arrow.png" alt="">
+                        </button>
+                        <div class="carousel_track-container">
+                            <ul class="carousel_track">
+                                <li class="carousel_slide">
+                                    <div class="skill">
+                                        <img src="images/skill_icons/boxes.PNG" class="skill-icon">
+                                        <h3>Manufacturing Engineering</h3>
+                                        <p>Improvement and omptimization of manufacturing processes is a passion of mine.  I work to make other people's jobs safer and more productive.</p>
+                                        <ul class="skills-lists">
+                                            <li><strong>Tech</strong> - Mastercam, Siemens PLC</li>
+                                            <li><strong>Knowledge</strong> - Lean Six Sigma Manufacturing, </li>
+                                        </ul>
+                                    </div>  
+                                </li>
+                                <li class="carousel_slide">
+                                    <div class="skill">
+                                        <img src="images/skill_icons/gears.PNG" class="skill-icon">
+                                        <h3>Mechanical Design</h3>
+                                        <p>I use modern engineering tools and problem solving skills to bring ideas from concept to reality.</p>
+                                        <ul class="skills-lists">
+                                            <li><strong>CAD</strong> - Solidworks, AutoCAD, Fusion 360</li>
+                                            <li><strong>Simulation</strong> - SW Simulation, Star-CCM+</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="carousel_slide">
+                                    <div class="skill">
+                                        <img src="images/skill_icons/html.PNG" class="skill-icon">
+                                        <h3>Software Development</h3>
+                                        <p>I'm a lover of all things code.  Proficient in a variety of languages across desktop, mobile, and web platforms.   
+                                        </p>
+                                        <ul class="skills-lists">
+                                            <li><strong>Backend</strong> - C++, Java, C#, Python</li>
+                                            <li><strong>Web</strong> - Html, CSS, Javascript, JQuery, django</li>
+                                            <li>Version Control, Github</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="carousel_slide">
+                                    <div class="skill">
+                                        <img src="images/skill_icons/hammer_wrench.png" class="skill-icon">
+                                        <h3>Shop Work</h3>
+                                        <p>Engineer with real world carpentry and shop experience.
+                                        </p>
+                                        <ul class="skills-lists">
+                                            <li><strong>Shop</strong> - Welding, Band Saws, Presses, Grinders, Shears</li>
+                                            <li><strong>General</strong> - Carpentry, Woodworking</li>
+                                            <li>Version Control, Github</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>     
+                        <button class="carousel_button carousel_button--right">
+                            <img src="images/utility/right_arrow.png" alt="">
+                        </button>    
+                        <div class="carousel_nav">
+                            <button class="carousel_indicator"></button>
+                            <button class="carousel_indicator"></button>
+                            <button class="carousel_indicator"></button>
+                        </div>       
+                    </div> 
                     <h3 class="skills-resume-message">For a more in-depth look at my skills and work history, follow my resume link &#8595;</h3>
 
                     <a href = "resources/Brock_Resume.pdf" class="button">Resume (.pdf)</a>

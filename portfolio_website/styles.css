@@ -7,7 +7,7 @@
 
 /* ===========================
 
-    Contents (Ctrl-f # for quick navigation)
+    Contents (Ctrl-f #.# for quick navigation)
 
     1.0 Root
     2.0 General Styles
@@ -103,10 +103,6 @@ strong {
 
 .spacing {
     opacity: 0;
-}
-
-#particles-js{
-    height: 50vh;
 }
 
 /*--- 2.1 Button ---*/
@@ -308,7 +304,6 @@ h3{
     .particles-js-canvas-el,
     .intro-particles{
         position: absolute;
-        display: block;
         top: 0;
 }
 }
