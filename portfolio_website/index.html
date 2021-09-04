@@ -37,42 +37,41 @@
                 </div>
             </nav>
             <!--Introduction-->
-            <div id="particles-js">
-                <section class="intro" id="home">
-                        <div class="intro-divider">
-                            <img src ="images/headshot.png" alt="picture of zach" class="image-intro">
-                            <div class="spacing">___</div>
-                            <h1 class="section-title section-title-intro">
-                                <div class = "animated"><strong>Hi, I'm Zach</strong></div>
-                            </h1>
-                        </div>
-                        <p class="section-subtitle section-subtitle-intro">
-                            <strong>Welcome to my Web Portfolio.</strong>
-                        </p>
-                        <div class="icon">
-                            <div class="arrow"></div>
-                        </div>
-                </section>
-            </div>
+            <!--div id="particles-js"></div>-->
+            <section class="intro" id="home">
+                    <div class="intro-divider">
+                        <img src ="images/headshot.png" alt="picture of zach" class="image-intro">
+                        <div class="spacing">___</div>
+                        <h1 class="section-title section-title-intro">
+                            <div class = "animated"><strong>Hi, I'm Zach</strong></div>
+                        </h1>
+                    </div>
+                    <p class="section-subtitle section-subtitle-intro">
+                        <strong>Welcome to my Web Portfolio.</strong>
+                    </p>
+                    <div class="icon">
+                        <div class="arrow"></div>
+                    </div>
+            </section>
 
             <!--Skills-->
             <section class="my-skills" id="skills">
                 <h2 class="section-title section-title-skills">What I Do</h2>
                 <h3 class="section-subtitle section-subtitle-skills"></h3>
                     <div class = "skills carousel">
-                        <button class="carousel_button carousel_button--left">
+                        <button class="carousel_button carousel_button--left is-hidden">
                             <img src="images/utility/left_arrow.png" alt="">
                         </button>
                         <div class="carousel_track-container">
                             <ul class="carousel_track">
-                                <li class="carousel_slide">
+                                <li class="carousel_slide current_slide_carousel">
                                     <div class="skill">
                                         <img src="images/skill_icons/boxes.PNG" class="skill-icon">
                                         <h3>Manufacturing Engineering</h3>
-                                        <p>Improvement and omptimization of manufacturing processes is a passion of mine.  I work to make other people's jobs safer and more productive.</p>
+                                        <p>I love getting every last bit of efficiency out of a manufacturing process.  An added bonus is getting to make peoples work safer and more productive.</p>
                                         <ul class="skills-lists">
                                             <li><strong>Tech</strong> - Mastercam, Siemens PLC</li>
-                                            <li><strong>Knowledge</strong> - Lean Six Sigma Manufacturing, </li>
+                                            <li><strong>Knowledge</strong> - Lean Six Sigma Manufacturing, 5S Workspace Standards</li>
                                         </ul>
                                     </div>  
                                 </li>
@@ -119,6 +118,7 @@
                             <img src="images/utility/right_arrow.png" alt="">
                         </button>    
                         <div class="carousel_nav">
+                            <button class="carousel_indicator current_slide"></button>
                             <button class="carousel_indicator"></button>
                             <button class="carousel_indicator"></button>
                             <button class="carousel_indicator"></button>
@@ -237,4 +237,5 @@
     <script src="particles/particles.js"></script>
     <script src="particles/app.js"></script>
     <script src="main.js"></script>
+    <script src="carousel.js"></script>
 </html>

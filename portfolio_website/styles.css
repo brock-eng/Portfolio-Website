@@ -2,7 +2,7 @@
 /* 
     Main css styles sheet for Zach Brock's 
     portfolio website.
-    All code was created in-house.
+    All content & code created by Zach Brock.
 */
 
 /* ===========================
@@ -467,40 +467,12 @@ h3{
     margin-bottom: 2em;
 }
 
-.skills {
-    flex-wrap: wrap;
-    margin-bottom: 4em;
-}
-
-.skills-lists{
-    text-align: left;
-}
-
 .skill-icon{
     width: var(--icon-size);
     height: var(--icon-size);
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0.2em;
-}
-
-.skill{
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 800px) {
-    .skills {
-        display: flex;
-        flex-direction: row;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        align-items: center;
-    }
-
 }
 
 
